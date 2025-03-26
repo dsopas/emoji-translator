@@ -52,11 +52,7 @@ const emojiDictionary = {
   "🌕": "butt",
   "🌰": "butt",
   "🍐": "butt",
-  "🍎": "butt",
-  "👉👌": "sex",
-  "🍌🍩": "sex",
-  "🍆🌮": "sex",
-  "🐍🌷": "sex"
+  "🍎": "butt"
 };
 
 const slangDictionary = {
