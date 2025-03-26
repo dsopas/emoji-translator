@@ -25,10 +25,14 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
+    textareaWrapper {
+      width: 100%;
+      padding: 10px;
+    }
+
     textarea {
       width: 100%;
       height: 120px;
-      padding: 10px;
       font-size: 16px;
       border-radius: 6px;
       border: 1px solid #ccc;
@@ -71,7 +75,9 @@
   <div class="container">
     <h2>Message Translator</h2>
     <p>Enter a message to reveal hidden meanings behind emojis or slang:</p>
-    <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
+    <div class="textareWrapper">
+      <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
+    </div>
     <button onclick="translateMessage()">Translate</button>
     <div id="output"></div>
   </div>
