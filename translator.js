@@ -46,7 +46,17 @@ const emojiDictionary = {
   "🍌": "male genitalia",
   "🥖": "male genitalia",
   "🥕": "male genitalia",
-  "🐍": "male genitalia"
+  "🐍": "male genitalia",
+  "👌": "butt",
+  "🍩": "butt",
+  "🌕": "butt",
+  "🌰": "butt",
+  "🍐": "butt",
+  "🍎": "butt",
+  "👉👌": "sex",
+  "🍌🍩": "sex",
+  "🍆🌮": "sex",
+  "🐍🌷": "sex"
 };
 
 const slangDictionary = {
