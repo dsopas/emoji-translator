@@ -3,7 +3,11 @@ const emojiCombos = {
   "🍌🍩": "sex",
   "🥖🍯": "sex",
   "🍆🌮": "sex",
-  "🐍🌷": "sex"
+  "🐍🌷": "sex",
+  "👅🍑🤯": "promising mind blowing oral sex",
+  "😛🍆💥": "eager to have oral sex",
+  "👆🌮": "fingering female genitalia",
+  "🚿🍆🍑": "shower sex"
 };
 
 const emojiDictionary = {
@@ -60,7 +64,8 @@ const emojiDictionary = {
   "🌕": "butt",
   "🌰": "butt",
   "🍐": "butt",
-  "🍎": "butt"
+  "🍎": "butt",
+  "♋": "reciprocal oral sex"
 };
 
 const slangDictionary = {
