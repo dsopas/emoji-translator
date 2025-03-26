@@ -127,4 +127,8 @@ function translateMessage() {
   }
 
   document.getElementById("output").innerText = "Translation:\n" + result;
+  output.classList.toggle('invisible');
+  textarea.addEventListener('input', (event) => {
+  output.classList.toggle('invisible');
+  }, { once: true });
 }
