@@ -60,6 +60,10 @@
       font-weight: bold;
     }
 
+    .invisible {
+      visibility: hidden;
+    }
+
     @media (max-width: 600px) {
       textarea {
         height: 100px;
@@ -73,7 +77,7 @@
     <p>Enter a message to reveal hidden meanings behind emojis or slang:</p>
     <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
     <button onclick="translateMessage()">Translate</button>
-    <div id="output"></div>
+    <div id="output" class="invisible"></div>
   </div>
 
   <script src="translator.js"></script>
