@@ -2,6 +2,8 @@
 
 This web application helps parents and guardians understand the hidden meanings behind emojis and slang terms often used in teen messaging. It detects emojis, acronyms, and slang associated with risky topics such as sexting, drug use, and online bullying.
 
+-- Online version -- (https://dsopas.github.io/emoji-translator/)
+
 ## Features
 - Translate emojis and text slang into plain English
 - Mobile-responsive design
