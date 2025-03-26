@@ -7,7 +7,9 @@ const emojiCombos = {
   "👅🍑🤯": "promising mind blowing oral sex",
   "😛🍆💥": "eager to have oral sex",
   "👆🌮": "fingering female genitalia",
-  "🚿🍆🍑": "shower sex"
+  "🚿🍆🍑": "shower sex",
+  "🍈🍈": "breasts or male testicles",
+  "⚽️⚽️": "male testicles"
 };
 
 const emojiDictionary = {
@@ -65,7 +67,8 @@ const emojiDictionary = {
   "🌰": "butt",
   "🍐": "butt",
   "🍎": "butt",
-  "♋": "reciprocal oral sex"
+  "♋": "reciprocal oral sex",
+  "🍒": "butt or breasts"
 };
 
 const slangDictionary = {
