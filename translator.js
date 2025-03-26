@@ -1,3 +1,11 @@
+const emojiCombos = {
+  "👉👌": "sex",
+  "🍌🍩": "sex",
+  "🥖🍯": "sex",
+  "🍆🌮": "sex",
+  "🐍🌷": "sex"
+};
+
 const emojiDictionary = {
   "🍆": "penis",
   "🍑": "butt",
@@ -99,10 +107,13 @@ const slangDictionary = {
 };
 
 function translateMessage() {
-  const textarea = document.getElementById("inputText");
-  const output = document.getElementById("output");
-  let input = textarea.value.toLowerCase();
+  let input = document.getElementById("inputText").value.toLowerCase();
   let result = input;
+
+  for (const [combo, meaning] of Object.entries(emojiCombos)) {
+    const regex = new RegExp(combo, "g");
+    result = result.replace(regex, `[${meaning}]`);
+  }
 
   for (const [emoji, meaning] of Object.entries(emojiDictionary)) {
     const regex = new RegExp(emoji, "g");
@@ -110,14 +121,10 @@ function translateMessage() {
   }
 
   for (const [slang, meaning] of Object.entries(slangDictionary)) {
-    const safeSlang = slang.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const safeSlang = slang.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); 
     const regex = new RegExp(safeSlang, "gi");
     result = result.replace(regex, `[${meaning}]`);
   }
 
-  output.innerText = "Translation:\n" + result;
-  output.classList.toggle('invisible');
-  textarea.addEventListener('input', (event) => {
-    output.classList.toggle('invisible');
-  }, { once: true });
+  document.getElementById("output").innerText = "Translation:\n" + result;
 }
