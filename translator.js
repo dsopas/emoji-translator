@@ -99,7 +99,9 @@ const slangDictionary = {
 };
 
 function translateMessage() {
-  let input = document.getElementById("inputText").value.toLowerCase();
+  const textarea = document.getElementById("inputText");
+  const output = document.getElementById("output");
+  let input = textarea.value.toLowerCase();
   let result = input;
 
   for (const [emoji, meaning] of Object.entries(emojiDictionary)) {
@@ -113,5 +115,9 @@ function translateMessage() {
     result = result.replace(regex, `[${meaning}]`);
   }
 
-  document.getElementById("output").innerText = "Translation:\n" + result;
+  output.innerText = "Translation:\n" + result;
+  output.classList.toggle('invisible');
+  textarea.addEventListener('input', (event) => {
+    output.classList.toggle('invisible');
+  }, { once: true });
 }

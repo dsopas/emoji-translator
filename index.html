@@ -64,6 +64,10 @@
       font-weight: bold;
     }
 
+    .invisible {
+      visibility: hidden;
+    }
+
     @media (max-width: 600px) {
       textarea {
         height: 100px;
@@ -79,7 +83,7 @@
       <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
     </div>
     <button onclick="translateMessage()">Translate</button>
-    <div id="output"></div>
+    <div id="output" class="invisible"></div>
   </div>
 
   <script src="translator.js"></script>
