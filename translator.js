@@ -107,7 +107,9 @@ const slangDictionary = {
 };
 
 function translateMessage() {
-  let input = document.getElementById("inputText").value.toLowerCase();
+  const textarea = document.getElementById("inputText");
+  const output = document.getElementById("output");  
+  let input = textarea.value.toLowerCase();
   let result = input;
 
   for (const [combo, meaning] of Object.entries(emojiCombos)) {
