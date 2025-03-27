@@ -1,7 +1,7 @@
 # Emoji & Slang Message Translator
 
 **Created by [David Sopas](https://github.com/dsopas)**  
-🔗 Live Demo: [https://msgdecode.com](https://msgdecode.com)
+🔗 Live Application: [https://msgdecode.com](https://msgdecode.com)
 
 A simple web app that helps parents, educators, or anyone decode hidden meanings in messages containing emojis and slang. Built to raise awareness about potentially inappropriate or risky content often found in teen messaging, this tool translates emojis, emoji combos, and text slang into plain English.
 
