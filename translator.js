@@ -16,7 +16,7 @@ const emojiCombos = {
   "👉🌮": "masturbation",
   "👉👈": "feeling nervous or shy",
   "🍑📱": "sexual invitation",
-  "🍿❄️": "netflix and chill - sex",
+  "🍿❄️": "netflix&chill - sex",
   "💃👀": "striptease",
   "🍷🎷🌇": "sexy time"
 };
