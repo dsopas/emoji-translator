@@ -43,6 +43,8 @@ cd emoji-translator
 
 Or just double-click index.html if you downloaded the ZIP.
 
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
