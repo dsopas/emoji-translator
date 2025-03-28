@@ -88,13 +88,17 @@
 </head>
 <body>
   <div class="container">
+    <select id="language-select" onchange="loadLanguage(this.value)">
+     <option value="en" selected>English</option>
+     <option value="pt">Português</option>
+    </select>
     <h2>Message Translator</h2>
     <p>Enter a message to reveal hidden meanings behind emojis or slang:</p>
     <div class="textareWrapper">
       <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
     </div>
     <button onclick="translateMessage()">Translate</button>
-    <div id="output" class="invisible"></div>
+    <div id="output" class="invisible" data-label="Translation:"></div>
   </div>
 
   <script src="translator.js"></script>

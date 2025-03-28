@@ -29,7 +29,7 @@ A simple web app that helps parents, educators, or anyone decode hidden meanings
 
 Here’s a quick look at the Emoji & Slang Message Translator in action:
 
-![Screenshot of the web app](screenshot.png)
+![Screenshot of the web app](img/screenshot.png)
 
 ---
 
@@ -42,6 +42,29 @@ cd emoji-translator
 ```
 
 Or just double-click index.html if you downloaded the ZIP.
+
+---
+
+## 🌍 How to Contribute a New Language
+
+We welcome contributions to make this project accessible in more languages!
+To add a new translation:
+
+1. Create a New UI Translation File
+   - Copy lang/en.json
+   - Rename it using the ISO language code (eg: fr.json, de.json)
+   - Translate the values, keep the keys the same.
+2. Translate emoji and slang dictionaries
+   - dictionaries/emoji_en.json → dictionaries/emoji_es.json
+   - dictionaries/slang_en.json → dictionaries/slang_es.json
+   - dictionaries/combos_en.json → dictionaries/combos_es.json
+   - Translate only the values, not the emoji or slang keys.
+3. Submit a Pull Request
+   - Fork this repo
+   - Add your new files under lang/ and dictionaries/
+   - Open a Pull Request with a short description
+
+We’ll review and merge it!
 
 ---
 
