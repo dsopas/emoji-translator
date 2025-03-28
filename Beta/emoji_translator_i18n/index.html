@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message Translator - A simple tool for parents decoding emojies</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    textareaWrapper {
+      width: 100%;
+      padding: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #output {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e8f5e9;
+      border: 1px solid #c8e6c9;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .invisible {
+      visibility: hidden;
+    }
+    footer a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease-in-out;
+    }
+
+    footer a:hover {
+      color: #4CAF50; 
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 600px) {
+      textarea {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <select id="language-select" onchange="loadLanguage(this.value)">
+     <option value="en" selected>English</option>
+     <option value="pt">Português</option>
+    </select>
+    <h2>Message Translator</h2>
+    <p>Enter a message to reveal hidden meanings behind emojis or slang:</p>
+    <div class="textareWrapper">
+      <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
+    </div>
+    <button onclick="translateMessage()">Translate</button>
+    <div id="output" class="invisible" data-label="Translation:"></div>
+  </div>
+
+  <script src="translator.js"></script>
+  <footer style="text-align: center; margin-top: 40px; font-size: 14px; color: #666;">
+    <p>Made by <strong>David Sopas</strong></p>
+    <p>View source on <a href="https://github.com/dsopas/emoji-translator/" target="_blank">GitHub</a></p>
+    <p>
+      🐘 <a href="https://mastodon.social/@dsopas" target="_blank" style="margin: 0 10px;">Mastodon</a> |
+      💼 <a href="https://www.linkedin.com/in/dsopas/" target="_blank" style="margin: 0 10px;">LinkedIn</a>
+    </p>
+  </footer>  
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "title": "Tradutor de Mensagens",
+  "description": "Insira uma mensagem para revelar significados escondidos em emojis ou gírias:",
+  "translateButton": "Traduzir",
+  "inputPlaceholder": "Cole ou digite a mensagem aqui...",
+  "outputLabel": "Tradução:"
+}
