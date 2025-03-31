@@ -3,5 +3,6 @@
   "description": "Enter a message to reveal hidden meanings behind emojis or slang:",
   "translateButton": "Translate",
   "inputPlaceholder": "Paste or type the message here...",
-  "outputLabel": "Translation:"
+  "outputLabel": "Translation:",
+  "exportButton": "Export All"
 }

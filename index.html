@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Message Translator - A simple tool for parents decoding emojis</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -98,6 +99,7 @@
       <textarea id="inputText" placeholder="Paste or type the message here..."></textarea>
     </div>
     <button onclick="translateMessage()">Translate</button>
+    <button onclick="exportEmojiDictionary()" id="export-button">Export</button>
     <div id="output" class="invisible" data-label="Translation:"></div>
   </div>
 
