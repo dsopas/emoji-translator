@@ -29,7 +29,7 @@ A simple web app that helps parents, educators, or anyone decode hidden meanings
 
 Here’s a quick look at the Emoji & Slang Message Translator in action:
 
-![Screenshot of the web app](img/screenshot.png)
+![Screenshot of the web app](img/poc_screenshot.png)
 
 ---
 
