@@ -12,6 +12,7 @@ A simple web app that helps parents, educators, or anyone decode hidden meanings
 - ✅ Translates individual emojis and emoji **combinations** (e.g. `👉👌`)
 - ✅ Detects and decodes **modern slang** and **chat acronyms** (e.g. *DTF*, *Netflix and chill*)
 - ✅ Works entirely **client-side** — no data is saved or sent
+- ✅ Multi-language **support**
 - ✅ **Mobile-friendly** responsive design
 - ✅ Lightweight, fast, and easy to use
 
@@ -22,6 +23,8 @@ A simple web app that helps parents, educators, or anyone decode hidden meanings
 1. Paste or type a message into the text box (e.g. from a chat or SMS).
 2. Click the **Translate** button.
 3. The app will display the interpreted meaning of emojis and slang.
+
+You also have a button below **Translate** called **Export** which opens an HTML page with all emojis. This could be useful for printing or taking a look on all emojis support by this application.
 
 ---
 
@@ -69,13 +72,13 @@ We’ll review and merge it!
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-Please see [DISCLAIMER.txt](DISCLAIMER.txt) for intended use and legal notice.
+Please see [DISCLAIMER.txt](DISCLAIMER.md) for intended use and legal notice and our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
 ## 🙌 Acknowledgments
 
-Inspired by resources from GetKidas and other digital safety initiatives.
+Inspired by resources from [GetKidas](https://getkidas.com/), [PSP](https://www.psp.pt/), [Netflix TV-show Adolescence](https://www.netflix.com/pt/title/81756069) and other digital safety initiatives.
 Thanks to the community for continued contributions and improvements.
 
 ---
