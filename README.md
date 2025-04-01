@@ -72,7 +72,7 @@ We’ll review and merge it!
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-Please see [DISCLAIMER.txt](DISCLAIMER.md) for intended use and legal notice and our [Code of Conduct](CODE_OF_CONDUCT.md).
+Please see [DISCLAIMER](DISCLAIMER.md) for intended use and legal notice and our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
