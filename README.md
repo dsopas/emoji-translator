@@ -38,10 +38,8 @@ Here’s a quick look at the Emoji & Slang Message Translator in action:
 ```bash
 git clone https://github.com/dsopas/emoji-translator.git
 cd emoji-translator
-# Then just open index.html in your browser 
+python3 -m http.server 8000 
 ```
-
-Or just double-click index.html if you downloaded the ZIP.
 
 ---
 
