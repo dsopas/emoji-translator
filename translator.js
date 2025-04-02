@@ -62,12 +62,14 @@ function exportEmojiDictionary() {
   const lang = document.getElementById("language-select")?.value || "en";
   const emojiFile = `dictionaries/emoji_${lang}.json`;
   const combosFile = `dictionaries/combos_${lang}.json`;
+  const slangFile = `dictionaries/slang_${lang}.json`;
 
   Promise.all([
     fetch(emojiFile).then(res => res.json()),
-    fetch(combosFile).then(res => res.json())
+    fetch(combosFile).then(res => res.json()),
+    fetch(slangFile).then(res => res.json())
   ])
-    .then(([emojiData, combosData]) => {
+    .then(([emojiData, combosData, slangData]) => {
       const emojiTableRows = Object.entries(emojiData)
         .map(([emoji, meaning]) => `<tr><td>${emoji}</td><td>${meaning}</td></tr>`) 
         .join('');
@@ -75,6 +77,10 @@ function exportEmojiDictionary() {
       const combosTableRows = Object.entries(combosData)
         .map(([combo, meaning]) => `<tr><td>${combo}</td><td>${meaning}</td></tr>`) 
         .join('');
+        
+      const slangTableRows = Object.entries(slangData)
+        .map(([combo, meaning]) => `<tr><td>${slang}</td><td>${meaning}</td></tr>`) 
+        .join('');        
 
       const htmlContent = `
         <html>
@@ -100,6 +106,13 @@ function exportEmojiDictionary() {
               <thead><tr><th>Combo</th><th>Meaning</th></tr></thead>
               <tbody>${combosTableRows}</tbody>
             </table>
+            
+            <h2>Slang (${lang.toUpperCase()})</h2>
+            <table>
+              <thead><tr><th>Slang</th><th>Meaning</th></tr></thead>
+              <tbody>${slangTableRows}</tbody>
+            </table>            
+            
           </body>
         </html>
       `;
