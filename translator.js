@@ -79,7 +79,7 @@ function exportEmojiDictionary() {
         .join('');
         
       const slangTableRows = Object.entries(slangData)
-        .map(([combo, meaning]) => `<tr><td>${slang}</td><td>${meaning}</td></tr>`) 
+        .map(([slang, meaning]) => `<tr><td>${slang}</td><td>${meaning}</td></tr>`) 
         .join('');        
 
       const htmlContent = `
